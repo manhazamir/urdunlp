@@ -1,2 +1,11 @@
 data/
 notebook/
+node_modules/
+__pycache__/
+.pytest_cache/
+*.pyc
+dist/
+build/
+*.egg-info/
+package-lock.json
+package.json
