@@ -1,0 +1,42 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "urdunlp"
+version = "0.1.0"
+description = "Urdu NLP toolkit — sentence segmentation that outperforms urduhack"
+readme = "README.md"
+license = { text = "MIT" }
+authors = [{ name = "Manha Zamir", email = "manhazamir@gmail.com" }]
+keywords = ["urdu", "nlp", "sentence-segmentation", "tokenization", "natural-language-processing"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Text Processing :: Linguistic",
+    "Natural Language :: Urdu",
+]
+requires-python = ">=3.9"
+dependencies = []
+
+[project.optional-dependencies]
+dev = ["pytest>=7.0", "pytest-cov"]
+
+[project.urls]
+Homepage = "https://github.com/manhazamir/urdunlp"
+Repository = "https://github.com/manhazamir/urdunlp"
+"Bug Tracker" = "https://github.com/manhazamir/urdunlp/issues"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["urdunlp*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
