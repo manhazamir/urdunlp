@@ -127,9 +127,3 @@ python -m pytest tests/ -v
 ## Research
 
 This library packages the algorithm from original research comparing Urdu sentence segmentation approaches. The benchmark used a hand-labeled dataset of Urdu news paragraphs; accuracy was computed using boundary-precision matching on the final three words of each sentence.
-
----
-
-## License
-
-MIT — see [LICENSE](LICENSE).
