@@ -3,7 +3,7 @@
 Urdu sentence segmentation that outperforms urduhack.
 
 ```bash
-pip install urdunlp
+pip install urdu-segmentation-nlp
 ```
 
 ---
@@ -116,10 +116,10 @@ The endword and conjunction lists are seeded with defaults learned from a news c
 ## Development
 
 ```bash
-git clone https://github.com/manhazamir/urdunlp
+git clone https://github.com/manhazamir/urdu-segmentation-nlp
 cd urdunlp
-pip install -e ".[dev]"
-pytest
+pip install pytest
+python -m pytest tests/ -v
 ```
 
 ---
@@ -128,3 +128,8 @@ pytest
 
 This library packages the algorithm from original research comparing Urdu sentence segmentation approaches. The benchmark used a hand-labeled dataset of Urdu news paragraphs; accuracy was computed using boundary-precision matching on the final three words of each sentence.
 
+---
+
+## License
+
+MIT — see [LICENSE](LICENSE).

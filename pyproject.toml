@@ -3,8 +3,8 @@ requires = ["setuptools>=68", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "urdunlp"
-version = "0.1.0"
+name = "urdu-segmentation-nlp"
+version = "0.1.1"
 description = "Urdu NLP toolkit — sentence segmentation that outperforms urduhack"
 readme = "README.md"
 license = { text = "MIT" }
@@ -30,9 +30,9 @@ dependencies = []
 dev = ["pytest>=7.0", "pytest-cov"]
 
 [project.urls]
-Homepage = "https://github.com/manhazamir/urdunlp"
-Repository = "https://github.com/manhazamir/urdunlp"
-"Bug Tracker" = "https://github.com/manhazamir/urdunlp/issues"
+Homepage = "https://github.com/manhazamir/urdu-segmentation-nlp"
+Repository = "https://github.com/manhazamir/urdu-segmentation-nlp"
+"Bug Tracker" = "https://github.com/manhazamir/urdu-segmentation-nlp/issues"
 
 [tool.setuptools.packages.find]
 where = ["."]
